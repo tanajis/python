@@ -1,8 +1,14 @@
-#A=[2,8,15,30,4]  s=12  k=3
-#find k emenets whose sum rquals to 2
-#Ex. 2+4=12  --only 2 elemts
-
-
+#=============================================================================================
+#!/usr/bin/env python
+#title           :dynamic_fib.py
+#description     :This is example of dynamic programming.
+#author          :Tanaji Sutar
+#date            :2020-Jan-29
+#python_version  :2.7/3  
+#problem:Given an Array of n elements, find k elements that sums to s.
+#Input :A=[2,8,15,30,4]  s=12  k=2 OUTPUT :2 & 4 sums to 12
+#Input :A=[2,8,15,30,4]  s=40  k=3 OUTPUT :2,8 & 30 sums to 12 
+#============================================================================================
 
 def f(n,k,s):
     #n should not be zero
@@ -15,6 +21,7 @@ def f(n,k,s):
         
         #end
         elif (k-1==0 and s-A[n]==0):
+            #save index n into memo as it is included
             memo[k]=n
             return 0
         
@@ -47,7 +54,8 @@ if __name__ == "__main__":
     memo=[None]*(k+1)
     res=f(n,k,s)
     print('---Test 1--')
-    print('for k:%r,s:%r  Ans:%r ' %(k,s,memo[1:]))
+      
+    print('for k:%r,s:%r  Ans:%r ' %(k,s,[A[i] for i in memo[1:]] ))
 
     #--Test case 2 :expected result:[None,2,5]
     k=3
@@ -56,7 +64,6 @@ if __name__ == "__main__":
     memo=[None]*(k+1)
     res=f(n,k,s)
     print('---Test 2--')
-    print('for k:%r,s:%r  Ans:%r ' %(k,s,memo[1:]))
+    print('for k:%r,s:%r  Ans:%r ' %(k,s,[A[i] for i in memo[1:]] ))
 
     
-
