@@ -10,6 +10,8 @@
 #Ex.
 #input [1, 2, 3, 4, 5]
 #output [120, 60, 40, 30, 24]
+
+#Note : complexity should be O(n) or less and Cant use devide.
 ################################################################################
 
 #Solution designed By Tanaji Sutar spending 2-3 hrs. Say thanks to him first!!!!
