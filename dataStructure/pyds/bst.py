@@ -96,7 +96,7 @@ class Node():
             #Replace currents value with temp's value
             self.data=temp.data
 
-            #Delete inorder successor 
+            #Delete inorder successor(temp from its old position)
             self.right=self.right.delete(temp.key)
 
         return self
