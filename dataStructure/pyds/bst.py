@@ -5,7 +5,7 @@
 #author          :Tanaji Sutar
 #date            :2020-Jan-30
 #python_version  :2.7/3
-#Methods         : Create BST,Binary search, Delete Key, print BST
+#Methods         :Create BST,Binary search, Delete Key, print BST
 #============================================================================================
 
 
