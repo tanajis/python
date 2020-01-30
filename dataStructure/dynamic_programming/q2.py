@@ -1,6 +1,6 @@
 #=============================================================================================
 #!/usr/bin/env python
-#title           :dynamic_fib.py
+#title           :q2.py
 #description     :This is example of dynamic programming.
 #author          :Tanaji Sutar
 #date            :2020-Jan-29
