@@ -17,13 +17,13 @@
 #============================================================================================
 
 """
-Tanaji's Explaination
+Approach:
 
 if array size is 5. if all element between 1 to 5-->output will be 6
 # if k number of elements are greater than size of Array 5.
 # Ex.[2,3,1,6,7] here two elements 6 and 7 are above 5 size.
-Hence we have chance of two numbers that are below five ( and >0) and are absent 
-in given array.
+Hence we have chance of getting two numbers that are below five ( and >0) and are absent 
+in given array.This is main idea behind the approach.
 
 now for i in range(lenghofArray):[1,2,3,4,5]
     if i is between range 1 and 5(size) :
@@ -31,10 +31,10 @@ now for i in range(lenghofArray):[1,2,3,4,5]
         hence in existing array only mark element whose index =i as negative
         Ex.if i ==3 , check 3 present in array
         if present mark element at index 3 as negative(whatever the value of element)
-        (We are looking marking just index here.value doesnt matter)
+        (We are looking to mark just index here.value doesnt matter)
 
-    In this way if array has 1,2,3 which is below size(5), 
-    then values(whatever it may be) at indexes 1,2,3 will be marked as negiative.
+    In this way if array has elements 1,2,3 which are below size(5), 
+    then values(whatever it may be) at indexes 1,2,3 will be marked as negative.
 
     now traverse our array again and find first index that has positive value.
     index number is the answer.    
