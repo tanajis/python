@@ -9,7 +9,7 @@
 
 #Complexity is 0(n2) as we need n for all vertices and n for searching minimum connected
 #We can reduce to 0(nlogn) if we use MIN HEAP
-#
+#PRIMS algo work for only connected graphs but fails for unconnected graphs. For unconnected gram we need to use Kruskal's Algo.
 #
 #Algo
 #Step1 :set curr to  first vertex
