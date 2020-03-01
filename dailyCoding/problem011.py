@@ -23,6 +23,16 @@
 # DELETE is  not implemented correctly in below code
 #---------------------------------------------------------------------------------------
 
+#=============================================================================================
+#!/usr/bin/env python
+#title           :problem011.py
+#level           :MEDIUM
+#description     :Reccomandations words. Example of Trie Retrival tree
+#author          :Tanaji Sutar
+#date            :2020-Mar-01
+#python_version  :2.7/3  
+#Note              :This is an example of DP.I have solved with total papaerwork and spending 2.30 hrs
+#============================================================================================
 
 
 class Trie:
