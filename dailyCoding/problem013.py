@@ -5,8 +5,8 @@
 
 #=============================================================================================
 #!/usr/bin/env python
-#title           :problem013.py
-#description     :Maximum Substring with k elements #DailyCoding
+#title           :problem013.py 
+#description     :Maximum Substring with k elements #DailyCoding13 - Hard
 #author          :Tanaji Sutar
 #date            :2020-Mar-01
 #python_version  :2.7/3  
