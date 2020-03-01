@@ -79,13 +79,8 @@ class Trie:
 
         curr.isWordEnd = True
 
-    def getAllwords(self):
-        """
-        This function returns all the nodes from given node as string
-        
-        """
-
-
+    def getwords(self):
+        #It needs depth first traversal
         stk=[]
 
         if self.data and not self.childrens :
