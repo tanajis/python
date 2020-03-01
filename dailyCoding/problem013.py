@@ -5,8 +5,9 @@
 
 #=============================================================================================
 #!/usr/bin/env python
-#title           :problem013.py 
-#description     :Maximum Substring with k elements #DailyCoding13 - Hard
+#title           :problem013.py
+#level           :HARD
+#description     :Maximum Substring with k elements #DailyCoding 013 
 #author          :Tanaji Sutar
 #date            :2020-Mar-01
 #python_version  :2.7/3  
@@ -40,7 +41,6 @@
 #       set max = ''
 #       set maxlen = 0
 #       call f(s,n-1,max,maxlen,distinctChars)
-
 
 
 def longestSubstringKDistinctChars(s,k,n,maxString,maxlen,distinctChars):
@@ -108,25 +108,6 @@ def longestSubstringKDistinctChars(s,k,n,maxString,maxlen,distinctChars):
                 return maxlen2,maxString2,distinctChars2
             elif maxlen3 >= maxlen2 and maxlen3 >= maxlen1:
                 return maxlen2,maxString2,distinctChars2
-
-
-#If No then:
-#  if we want to include s[n]
-#           trim the max string from first occurance of first element in distinctChars
-#           remove first element added to distinctChars
-#           add s[n] to end of distinctChars
-#           add s[n] to max string
-#           increase maxlen by 1
-#           call f(s,n-1,max,maxlen,distinctChars)
-#
-# if we want to exclude s[n]
-#       make distinctChars empty
-#       set max = ''
-#       set maxlen = 0
-#       call f(s,n-1,max,maxlen,distinctChars)
-
-
-
 
 
 if __name__ == "__main__":
