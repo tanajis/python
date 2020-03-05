@@ -1,6 +1,8 @@
  - solve problems recursively by trying to build a solution incrementally, one piece at a time, 
  - remove those solutions that fail to satisfy the constraints of the problem at any point of time by time, 
    here, is referred to the time elapsed till reaching any level of the search tree
+- Backtracking works as similar as DFS traversing
+- We need stack to push the values and pop if if fails certain conditions
 
 There are three types of problems in backtracking –
 
