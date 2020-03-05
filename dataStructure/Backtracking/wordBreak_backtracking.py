@@ -43,6 +43,7 @@ def existInDict(w,dict:list):
 
 def wordBreak_backtracking(s,start,dict,stk):
 
+    #stknew = deepcopy(stk)
     #print('call',s,start,stk)
     l = len(s)
 
@@ -63,15 +64,21 @@ def wordBreak_backtracking(s,start,dict,stk):
             res1 = wordBreak_backtracking(s,i+1,dict,stk)
             #If True then continue to next else pop/remove that word
             if res1 == True:
-                
+                #w = ''
                 #IF we reached at the end of string then only print result
                 if i == l-1:
                     print(stk)
+                    #IMPORTANT
+                    #at res1 above, it will automatically print the final result cosnidering word 'sam'
+                    #Now remove that word 'sam' so that we can consider 'samsung'
+                    #Result with word 'samsung' should not contain word 'sam' hence  pop it from stk
+                    stk.pop()
                 continue
             else:
                 #Remove last elememt -stack pop
                 stk.pop()
 
+            
 
 if __name__ == "__main__":
 
