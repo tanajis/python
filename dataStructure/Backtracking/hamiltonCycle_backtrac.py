@@ -5,7 +5,7 @@
 #author          :Tanaji Sutar
 #date            :2020-Amr-03
 #python_version  :2.7/3  
-#problem         :Gievn a graphh return all possible hamiltonian cycles
+#problem         :Gievn a graph return all possible hamiltonian cycles
 #============================================================================================
 
 #Notes :
