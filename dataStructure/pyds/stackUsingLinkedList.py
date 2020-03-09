@@ -1,5 +1,5 @@
 
-#IMP python list has all featires of stack. We can use it as stack
+#IMP python list has all features of stack. We can use it as stack
 
 
 class stackNode:
