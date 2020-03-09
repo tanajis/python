@@ -1,3 +1,8 @@
+
+#IMP python list has all featires of stack. We can use it as stack
+
+
+
 class stackUsingArray:
     def __init__(self):
         self.stk=[]
