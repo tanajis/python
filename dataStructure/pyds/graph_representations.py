@@ -1,6 +1,14 @@
 
 #IMP Note : Copied from : geeksforgeeks.org/graph-and-its-representations/ 
 # Best explaination : https://www.javatpoint.com/graph-theory-graph-representations
+#####################################################################################################################
+#NOTE : We also use mathermatical representaon of graph like below and in many problems it is prefered as it is very simpel and short
+#Less time consuiming
+#V = {'A','B','C','D'}
+#E = {'AB','BC','CD','AD'}
+#G = {V,E}
+
+#####################################################################################################################
 
 #Graph and its representations
 #Every graph has below two components
@@ -26,12 +34,14 @@
 
 # Following two are the most commonly used representations of a graph.
 # Best explaination : https://www.javatpoint.com/graph-theory-graph-representations
-# 1. Adjacency Matrix
-# 2. Adjacency List
-# 3. Incidence Matrix 
-# 4. Incidence List
+# 1. Mathematical Ex.Below
+# 2. Adjacency Matrix  Ex. #G = {V,E} E = {'AB','BC','CD','AD'}  V = {'A','B','C','D'}
+# 3. Adjacency List
+# 4. Incidence Matrix 
+# 5. Incidence List
 
-#First tow are commonly used
+
+#First three are commonly used
 #The choice is situation specific
 
 
