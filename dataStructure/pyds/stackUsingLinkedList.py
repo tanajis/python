@@ -1,3 +1,7 @@
+
+#IMP python list has all featires of stack. We can use it as stack
+
+
 class stackNode:
     def __init__(self,next):
         self.data=data
