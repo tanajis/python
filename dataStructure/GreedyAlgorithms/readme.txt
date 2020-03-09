@@ -11,6 +11,8 @@ This means that it makes a locally-optimal choice in the hope that this choice w
 How do you decide which choice is optimal?
 
 #IMP : The Greedy algorithm has only one shot to compute the optimal solution so that it never goes back and reverses the decision.
+#IMP : generally in greedy approach, we sort some inputs by increasing or descresing order and then select.
+
 
 Greedy algorithms have some advantages and disadvantages:
 
