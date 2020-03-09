@@ -8,6 +8,8 @@
 • Heuristic algorithms 
 
 
+Greedy:
+builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit
 
 
 Divide and Conquer (D & C) vs Dynamic Programming (DP)
