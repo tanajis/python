@@ -5,6 +5,7 @@ What is a 'Greedy algorithm'?
 Ref : https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/tutorial/
 
 
+
 A greedy algorithm, as the name suggests, always makes the choice that seems to be the best at that moment. 
 This means that it makes a locally-optimal choice in the hope that this choice will lead to a globally-optimal solution.
 
@@ -12,7 +13,7 @@ How do you decide which choice is optimal?
 
 #IMP : The Greedy algorithm has only one shot to compute the optimal solution so that it never goes back and reverses the decision.
 #IMP : generally in greedy approach, we sort some inputs by increasing or descresing order and then select.
-
+# It builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit
 
 Greedy algorithms have some advantages and disadvantages:
 
