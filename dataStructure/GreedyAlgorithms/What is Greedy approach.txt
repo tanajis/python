@@ -16,44 +16,10 @@ Greedy algorithms have some advantages and disadvantages:
 2.Analyzing the run time  will generally be much easier than for other techniques 
 3.It is hard to prove why it is correct. 
 4.Note: Most greedy algorithms are not correct. An example is described later in this article.
-
-C. How to create a Greedy Algorithm?
-
-Example :
-
-Being a very busy person, you have exactly T time to do some interesting things and you want to do maximum such things.
-You are given an array A of integers, where each element indicates the time a thing takes for completion. You want to calculate the maximum number of things that you can do in the limited time that you have.
-This is a simple Greedy-algorithm problem. In each iteration, you have to greedily select the things which will take the minimum amount of time to complete while maintaining two variables currentTime and numberOfThings. To complete the calculation, you must:
-
-Greedy approach:
-
-Sort the array A in a non-decreasing order.
-Select each to-do item one-by-one.
-Add the time that it will take to complete that to-do item into currentTime.
-Add one to numberOfThings.
-Repeat this as long as the currentTime is less than or equal to T.
-
-Let A = {5, 3, 4, 2, 1} and T = 6
-
-After sorting, A = {1, 2, 3, 4, 5}
-
-After the 1st iteration:
-
-currentTime = 1
-numberOfThings = 1
-After the 2nd iteration:
-
-currentTime is 1 + 2 = 3
-numberOfThings = 2
-After the 3rd iteration:
-
-currentTime is 3 + 3 = 6
-numberOfThings = 3
-After the 4th iteration, currentTime is 6 + 4 = 10, which is greater than T. Therefore, the answer is 3.
-
-
-
 #-------------------------------------------------------------------------------------------------------------------
+Problems that can be solved using Greedy Approach
+#-------------------------------------------------------------------------------------------------------------------
+
 Travelling Salesman Problem
 Prim's Minimal Spanning Tree Algorithm
 Kruskal's Minimal Spanning Tree Algorithm
