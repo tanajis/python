@@ -1,4 +1,3 @@
-readme
 
 
 What is a 'Greedy algorithm'?
