@@ -24,13 +24,20 @@ def optimalMergeFiles(f):
     remaining=f2
     for i in range(1,len(f)):
         #print(remaining)
-        #get minimum
+        #get first minimum and delete from input
         m1=min(remaining)
         remaining.remove(m1)
+
+        #get second minimum and delete from input
         m2=min(remaining)
         remaining.remove(m2)
+
+        #Merge tow files selected
         print('Merging %r and %r' %(m1,m2))
-        remaining.append(m1+m2)
+        new = m1+m2
+
+        #append new list to input
+        remaining.append(new)
     
     print('final size %r' %(remaining[0]))
 if __name__ == "__main__":
