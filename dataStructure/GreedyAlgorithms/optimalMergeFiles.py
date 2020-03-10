@@ -8,6 +8,11 @@
 #Notes           : Given a list of size of each file, provide optimal way of merging.
 #============================================================================================
 
+# Approach : Greedy
+#1.Sort the list by increasing order of length
+#2.repeat 3 and 4 intil we get only one single file
+#3.select two minimum files at the moment(from both input and newly generated) 
+#4.merge them
 
 def optimalMergeFiles(f):
     print('Input :',f)
