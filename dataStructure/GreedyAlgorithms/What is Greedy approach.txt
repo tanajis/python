@@ -3,24 +3,20 @@ readme
 
 What is a 'Greedy algorithm'?
 Ref : https://www.hackerearth.com/practice/algorithms/greedy/basics-of-greedy-algorithms/tutorial/
+-------------------------------------------------------------------------------------------------------------
 
-
-
-A greedy algorithm, as the name suggests, always makes the choice that seems to be the best at that moment. 
-This means that it makes a locally-optimal choice in the hope that this choice will lead to a globally-optimal solution.
-
-How do you decide which choice is optimal?
-
-#IMP : The Greedy algorithm has only one shot to compute the optimal solution so that it never goes back and reverses the decision.
-#IMP : generally in greedy approach, we sort some inputs by increasing or descresing order and then select.
-# It builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit
+1.A greedy algorithm, as the name suggests, always makes the choice that seems to be the best at that moment(min / max). 
+2.locally-optimal choice(No garantee that it will lead to globally optimized solution).
+3.Only one shot.It never goes back and reverses the decision.
+4.We need sort some inputs by increasing or descresing order and then select.
+5.It builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit
 
 Greedy algorithms have some advantages and disadvantages:
 
---Easy  to come up with a greedy algorithm  for a problem.
---Analyzing the run time  will generally be much easier than for other techniques 
---It is hard to prove why it is correct. 
----Note: Most greedy algorithms are not correct. An example is described later in this article.
+1.Easy  to come up with a greedy algorithm  for a problem.
+2.Analyzing the run time  will generally be much easier than for other techniques 
+3.It is hard to prove why it is correct. 
+4.Note: Most greedy algorithms are not correct. An example is described later in this article.
 
 C. How to create a Greedy Algorithm?
 
