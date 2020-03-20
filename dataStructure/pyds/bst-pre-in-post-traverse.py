@@ -1,7 +1,8 @@
 #=============================================================================================
 #!/usr/bin/env python
 #title           :bst-pre-in-post-traverse.py
-#description     :Binary Search Tree PreOrder ,InOrder ,PostOrder traversals
+#description     :From given list of elements, create BST.
+#                 Get PreOrder ,InOrder ,PostOrder traversals
 #author          :Tanaji Sutar
 #date            :2020-Mar-20
 #python_version  :2.7/3
