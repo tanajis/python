@@ -1,0 +1,132 @@
+ref :https://www.geeksforgeeks.org/binary-tree-set-3-types-of-binary-tree/
+
+What is Tree ?
+    root
+    leaf 
+    parent
+    children
+
+    a
+  / | \
+ d  b  c
+
+#Note : Tree can have multiple childs.Binary Tree have only 2
+
+#Why to use tree?
+    -faster search than Array/linked lists
+    -hyrarchical storage (Ex.file system)
+#----------------------------------------------------------------------------------------------    
+# Binary Tree
+    - A tree who's elements have at most 2 children(left and right only)
+
+    -Types of Binary Tree
+    ------------------------------------------------------
+    1.Full Binary Tree : 
+        -A Binary Tree is full if every node has 0 or 2 children.
+
+    Note : no of leaf node= no of internal nodes(including root) + 1
+    
+    Example 1:
+              18
+           /      \  
+         15        30  
+        /  \      /  \
+      40    50  100   40
+
+    Example 2:
+
+              18
+           /      \  
+         15        30  
+        /  \      
+      40    50 
+   ------------------------------------------------------
+    2.Complete Binary Tree
+        Binary Tree is complete Binary Tree if satisfy below BOTH condition:
+        a.All levels are completely filled except possibly the last level  
+        b.The last level has all nodes as left as possible
+    
+    Note : It is used for Binary Heap min or max
+          Ref :https://www.geeksforgeeks.org/binary-heap/
+
+    Example 1:
+               18
+           /       \  
+         15         30  
+        /  \        /  \
+      40    50    100   40
+
+    Example 2:
+               18
+           /       \  
+         15         30  
+        /  \        /  \
+      40    50    100   40
+     /  \   /
+    8   7  9 
+    
+ -----------------------------------------------------
+    3.Perfect Binary Tree:
+     Binary tree is Perfect Binary Tree if it satisfy below both condition
+      a.all internal nodes have exact two children.
+      b.all leaves are at the same level.
+
+      Example 1:
+               18
+           /       \  
+         15         30  
+        /  \        /  \
+      40    50    100   40
+
+      Example2
+               18
+              /  \  
+             15  30  
+
+   ------------------------------------------------------
+   
+    4.Balanced Binary Tree
+    -height of the tree = O(Log n) where n is number of nodes.
+
+    Note :Balanced Binary Search trees are performance wise good as 
+          they provide O(log n) time for search, insert and delete.
+     
+    Examples:
+        a.AVL tree
+        b.Red-Black trees
+
+        a.AVL Tree:ref https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
+          -It is a self-balancing Binary Search Tree (BST) where the difference 
+          between heights of left and right subtrees cannot be more than one for all nodes.
+         -named after inventors Adelson-Velsky and Landis
+         -https://en.wikipedia.org/wiki/AVL_tree
+
+        b.Red-Black trees:
+        
+        - https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/
+        - Red-Black Tree is a self-balancing Binary Search Tree (BST) where every node 
+          follows following rules.
+            1) Every node has a color either red or black.
+            2) Root of tree is always black.
+            3) There are no two adjacent red nodes 
+            (A red node cannot have a red parent or red child).
+            4) Every path from a node (including root) to any of its descendant NULL 
+              node has the same number of black nodes.
+        
+        - Completely Fair Scheduler use red black tree
+
+    ------------------------------------------------------     
+
+    5.A degenerate (or pathological) tree A
+    -Tree where every internal node has one child
+    -Such trees are performance-wise same as linked list.
+    
+
+    Ex.      
+        10
+        /
+        20
+        \
+        30
+        \
+        40
