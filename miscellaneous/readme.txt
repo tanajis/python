@@ -26,3 +26,11 @@ Ex.combination = int2bin(2,3)
         board.append(temp)
 
 [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+
+
+
+In python 2x  print with end doe not work .It works in 3 only
+Ex. print(board[i], end=" ")
+
+to get ot work, just import below in 2x
+from __future__ import print_function
