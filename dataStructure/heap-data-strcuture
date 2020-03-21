@@ -1,0 +1,31 @@
+-ref :https://www.geeksforgeeks.org/binary-heap/
+-A Binary Heap is a Binary Tree with following properties.
+ 1.It’s a complete tree (All node expect leaf 2 child and leaf should be as left as possible)
+ 2.It must be min or max
+    min : every parent(including root) must be min than child
+    max : every parent(including root) must be max than child
+
+
+Applications of Heap:
+    1.used in heap Sort (O(nLogn) time)
+    2.used in Priority Queue
+
+    program:
+    a) K’th Largest Element in an array.
+    b) Sort an almost sorted array/
+    c) Merge K Sorted Arrays.
+
+Operations:(for min heap)
+    1.getMini() : It returns the root element of Min Heap
+    2.extractMin():Removes the minimum element from MinHeap
+    3. insert(): Inserting a new key takes O(Log n) time. 
+          1.Add a NEW key at the END of the tree 
+          2.IF new key is greater than its parent -->keep as it is
+          else we need to traverse up to fix the violated heap property.
+    
+    4.delete(): Deleting a key also takes O(Logn) time. 
+    We replace the key to be deleted with minum infinite by calling decreaseKey(). 
+    After decreaseKey(), the minus infinite value must reach root, 
+    so we call extractMin() to remove the key.
+
+    5.decreaseKey()
