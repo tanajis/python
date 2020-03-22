@@ -99,9 +99,6 @@ def get_running_medians(arr):
     for x in arr:
         if med is not None:
             prev_med = med
-
-        #push element in min_heap
-        #hq.heappush(min_heap, x)
         
         if len(max_heap) > len(min_heap) :
             #left has more elements than right
