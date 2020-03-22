@@ -1,0 +1,24 @@
+
+to get binary representation of any number 
+
+3 = 2^1  + 1 
+here pow of 2 is 1
+bits required = pow + 1 = 1+1 =2
+
+as 2^1  + 1 =3
+   10 + 1  = 11 (binary)
+   
+  
+ Ex. 18
+ 18 = 16+2 = 2^4 + 2
+ pow is 4 hence  bits = 4+1 = 5 bits required
+ 10000 + 10 = 10010
+ This Binary of 18 is  10010
+ 
+ Ex. 68
+ 68  = 64 + 4 = 2^6   + 2^2  =1000000 +100 =  1000100
+ 
+ 
+
+ 
+ 
