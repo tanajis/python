@@ -34,3 +34,21 @@ Ex. print(board[i], end=" ")
 
 to get ot work, just import below in 2x
 from __future__ import print_function
+
+
+
+
+#----------------HEAP/Priority Queue inbuild python package--------------
+
+import heapq as hq
+
+min_heap = list()
+hq.heapify(mylist)
+
+Or 
+
+min_heap = []
+hq.heappush(min_heap, 5)
+v = hq.heappop(min_heap)
+
+If you want max heap just add -ve sign while read/write from heapq
