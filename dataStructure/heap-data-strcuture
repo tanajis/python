@@ -1,4 +1,7 @@
 -ref :https://www.geeksforgeeks.org/binary-heap/
+
+-https://www.youtube.com/watch?v=NEtwJASLU8Q
+
 -A Binary Heap is a Binary Tree with following properties.
  1.It’s a complete tree (All node expect leaf 2 child and leaf should be as left as possible)
  2.It must be min or max
