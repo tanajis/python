@@ -1,4 +1,6 @@
 
+Method 1:
+
 to get binary representation of any number 
 
 3 = 2^1  + 1 
@@ -18,7 +20,20 @@ as 2^1  + 1 =3
  Ex. 68
  68  = 64 + 4 = 2^6   + 2^2  =1000000 +100 =  1000100
  
- 
+#-------------------------------------------------------------------------------
+Simple method : 2
 
- 
+1.Store the remainder when the number is divided by 2 in an array.
+2.Divide the number by 2
+3.Repeat the above two steps until the number is greater than zero.
+4.Print the array in reverse order now.
+
+Ex.  12
+12/2 --rem 0
+6/2  --rem 0
+3/2 ---rem 1
+1  ---rem 1
+
+rem array = [0,0,1,1]
+binary of 12 = reverse of array = 1100
  
