@@ -37,3 +37,12 @@ Ex.  12
 rem array = [0,0,1,1]
 binary of 12 = reverse of array = 1100
  
+Algo :
+
+def decToBinary(n):
+    res = ''
+    while(n>=1):
+        res = str(n%2) + res  
+        n = n/2
+
+    return int(res)
