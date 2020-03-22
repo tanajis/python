@@ -34,3 +34,30 @@ Operations:(for min heap) Ref :https://www.geeksforgeeks.org/insertion-and-delet
 
 
     5.decreaseKey()
+
+
+Array representation:
+
+     Ex. min heap
+     
+     
+           10
+          /  \
+         15   19
+       /  \    / \
+      20   30   25 39
+     / \   /  
+    23 40 35
+    
+    Traverse Breadth first traversal
+    Array = [10,15,19,20,30,25,39,23,40,35]
+    
+    for every element at index k, its parents is at index ceil(k/2) Ex. 35 is at 10th index so its parrent must be at 5th index that is 30
+    
+    insert(push) :   add at the END of array(at n index) and compare with  its parrent at n/2 if smaller than parent then swap.. so on
+    
+    pop(delete root): remove root(START) and move last elelement to root position(start of array).
+                      And swap with child if it is greater than child (prefer to swap with greater childEx. if childs are 35 and 40 then prefer 40)
+    
+    delete(any element other than root):Replace the value to be deleted by last value and adjust as per above.
+                     
