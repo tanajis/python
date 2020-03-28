@@ -60,7 +60,7 @@ Array representation:
     insert(push) :   add at the END of array(at n index) and compare with  its parrent at n/2 if smaller than parent then swap.. so on
     
     pop(delete root): remove root(START) and move last elelement to root position(start of array).
-                      And swap with child if it is greater than child (prefer to swap with greater childEx. if childs are 35 and 40 then prefer 40)
-    
+                      And swap with child if it is greater than child (prefer to swap with smallest childEx. if childs are 35 and 40 then prefer 35)
+                     this is in case of min heap. In case of max heap prefer largets one
     delete(any element other than root):Replace the value to be deleted by last value and adjust as per above.
                      
