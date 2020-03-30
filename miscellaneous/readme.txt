@@ -44,3 +44,11 @@ hq.heappush(min_heap, 5)
 v = hq.heappop(min_heap)
 
 If you want max heap just add -ve sign while read/write from heapq
+
+
+
+
+Googles guide for all languages:
+http://google.github.io/styleguide/
+https://realpython.com/python-comments-guide/
+https://www.python.org/dev/peps/pep-0257/
