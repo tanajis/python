@@ -1,6 +1,6 @@
 # python
 
-This directory contains about core python prgrams.
+This directory contains python, data structure programs written by me while studying and doing code practice.
 
 
 Disclaimer
