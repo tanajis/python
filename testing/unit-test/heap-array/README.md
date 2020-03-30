@@ -13,3 +13,7 @@ py main.py
 
 3.Run the test case
 py tests/heap_array_tests.py
+
+
+
+More to explore :https://www.geeksforgeeks.org/python-exceptional-conditions-testing-in-unit-tests/?ref=rp
