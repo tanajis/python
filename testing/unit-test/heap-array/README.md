@@ -1,9 +1,14 @@
+What Is This?
 
+This is a demontration of unit testing using unitets module of python.
+project consist of array implementation of heap data structure.
+tests folder contain the testing script to test the module.
 
-#go to project folder heap-array
+How To Use This
+1.Go to project folder heap-array
 
-#run the project
+2.Run the project
 py main.py
 
-#run the test case
+3.Run the test case
 py tests/heap_array_tests.py
