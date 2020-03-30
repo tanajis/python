@@ -1,4 +1,4 @@
-# Python and data structure Study
+# Python and Data Structure Study
 
 This directory contains python, data structure programs written by me while studying and doing code practice.
 
