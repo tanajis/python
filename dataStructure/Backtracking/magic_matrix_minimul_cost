@@ -1,0 +1,110 @@
+#!/usr/bin/env python
+#=============================================================================================
+#Title           :magicMatrx.py
+#Description     :Elite Card Updates to Postgres.
+#Author          :Tanaji Sutar
+#Date            :2020-Apr-06
+#python version  :2.7/3  
+#============================================================================================
+
+from copy import deepcopy
+def getminimal(A):
+    
+    global all_outputs
+    all_outputs = []
+    cost = 0
+    used = []
+    res =makeMagicMatrix(A,0,cost,used)
+
+    # Now get minimum cost solution
+    mincost = min([sol[1] for sol in all_outputs])
+    
+    for sol in all_outputs:
+        if sol[1] == mincost:
+            print('Minimum cost:%r',mincost)
+            print(sol[0])
+
+
+def isMagic(matrix):
+  for row in range(0,3):
+      for col in range(0,3):
+        if matrix [row][col]==0:
+          return False
+  
+  # Check if rows
+  for row in range(0,3):
+    if (matrix[row][0]+matrix[row][1]+ matrix[row][2])!= 15:
+      return False
+
+  # Check Columns sum
+  for col in range(0,3):
+    if (matrix[0][col]+matrix[1][col]+matrix[2][col])!=15:
+     return False
+  
+  # Check diagonal sum
+  if (matrix[0][0]+matrix[1][1]+matrix[2][2])!=15:
+   return False
+  
+  # Check diagonal sum
+  if (matrix[0][2]+matrix[1][1]+matrix[2][0])!=15:
+   return False
+
+  return True 
+
+def makeMagicMatrix(matrix,row,cost,used):
+    #print('call' ,matrix,row)
+    if isMagic(matrix):
+        return True
+    while(row <3):
+        
+        k = 15 - sum(matrix[row])
+        for col in range(3):
+            # Push
+            tmp = matrix[row][col] + k
+            if used.__contains__(tmp):
+                continue
+
+            matrix[row][col] = tmp
+            used.append(tmp)
+            cost = cost + k
+
+            # Check
+            if makeMagicMatrix(matrix,row + 1,cost,used):
+                #print(matrix,cost)
+                o1 = deepcopy(matrix)
+                c1 = deepcopy(cost)
+                all_outputs.append([o1,c1])
+            
+            # Pop
+            matrix[row][col] = matrix[row][col] - k
+            used.remove(tmp)
+            cost = cost - k
+
+        row = row + 1
+if __name__ == "__main__":
+    
+    # Test case 1
+    print('Test case 1')
+    A = [[5,3,4],[1,5,8],[6,4,2]]
+    getminimal(A)
+
+    # Test case 2
+    print('\nTest case 2')
+    B = [[4,8,2],
+        [4,5,7],
+        [6,1,6]]
+    
+    getminimal(B)
+
+    #print(isMagic([[8,3,4],[1,5,9],[6,7,2]]))
+
+    """
+    Current output :
+    Minimum cost:%r 7                  ---correct
+    [[8, 3, 4], [1, 5, 9], [6, 7, 2]]  ---correct
+    
+    
+    Minimum cost:%r 2                  
+    [[4, 9, 2], [3, 5, 7], [8, 1, 6]]
+
+    """
