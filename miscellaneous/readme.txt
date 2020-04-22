@@ -52,3 +52,11 @@ Googles guide for all languages:
 http://google.github.io/styleguide/
 https://realpython.com/python-comments-guide/
 https://www.python.org/dev/peps/pep-0257/
+
+
+
+
+
+#-----------yes to all prompt in shell cammands
+
+yes|rm -R folder1
