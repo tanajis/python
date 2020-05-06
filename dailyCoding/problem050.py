@@ -18,12 +18,13 @@ You should return 45, as it is (3 + 2) * (4 + 5).
 
 Solution:
   
-  
+  function calculate(node,stk)
   step 1:if leafnode is return int value
   step 2:if internal node push to stack
-  step 3: leftval = calculate(left)
-          rightval = calculate(right)
-          return leftVal + rightval
-  step 4: pop stack
+  step 3: leftval =  calculate(left,stk) recursively.
+          rightval = calculate(right,stk) recursively.
+          operator = pop stack
+          return (leftVal operator rightval)
+  
     
     
