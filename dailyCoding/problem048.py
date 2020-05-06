@@ -39,7 +39,7 @@ step 3: If position of new less than position of parent in INORDER then
             set new element as left of parent
             set parent to parent.left
           else
-            parent = parent.paraent 
+            parent = parent.left
         
         ELSE
         set new element as right of parent
