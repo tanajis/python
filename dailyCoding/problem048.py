@@ -28,25 +28,17 @@ PREORDER = [a, b, d, e, c, f, g]
 INORDER = [d, b, e, a, f, c, g]
 
 
-step 1: initialise ind = 1
-step 2: if ind is 1 then pick PREORDER[ind] as root 
-          set parent to  PREORDER[ind]
-          increament ind
-        else
-          pick new as PREORDER[ind] perform step 3 and 4
-step 3: If position of new less than position of parent in INORDER then
-          if left of parent is empty
-            set new element as left of parent
-            set parent to parent.left
-          else
-            parent = parent.left
-        
-        ELSE
-        set new element as right of parent
-        set parent to parent.right
-step 4: increament ind and go to step 2
-        
-        
+#--------------------------------------
+
+step 1 : pick element from preorder,create node using it and mark it processed in preorder.
+step 2 : find that element in in order.
+step 3: recursively pass all the element to left side to create tree and point it as root.left
+step 4: recursively pass all the element to right side to create tree and point it as root.right
+step 5: if only one element ,create node, mark it processed in preorder and return node.
+
+
+
+
         
         
         
