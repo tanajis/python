@@ -1,6 +1,8 @@
 
 # Python 3 does not access mixure of tab and spcae for indentation and prefers only spaces.
 # This program can be used while migration of code from python 2x to 3x
+# 1 tab  = 4 spaces . Replace tab by 4 spaces.
+
 import os
 
 file_path = 'test.py'
