@@ -34,6 +34,8 @@ from __future__ import print_function
 
 import heapq as hq
 
+
+
 min_heap = list()
 hq.heapify(mylist)
 
@@ -60,3 +62,14 @@ https://www.python.org/dev/peps/pep-0257/
 #-----------yes to all prompt in shell cammands
 
 yes|rm -R folder1
+
+
+# oracle client library issue
+
+https://oracle.github.io/odpi/doc/installation.html#windows
+https://stackoverflow.com/questions/56119490/cx-oracle-error-dpi-1047-cannot-locate-a-64-bit-oracle-client-library
+
+https://oracle.github.io/odpi/doc/installation.html#windows
+Download and copy to c://oracle and add
+
+:
