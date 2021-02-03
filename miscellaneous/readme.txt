@@ -73,3 +73,8 @@ https://oracle.github.io/odpi/doc/installation.html#windows
 Download and copy to c://oracle and add
 
 :
+
+------------python error line no 
+err_msg = "Error in perform_data_validation on line no: %s Error: %s" % (sys.exc_info()[2].tb_lineno,str(e))
+logging.error(err_msg)
+sys.exit()
